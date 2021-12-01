@@ -19,7 +19,7 @@ module.exports = {
         food.splice(index, 1)
         res.status(400).send(food)
     
-    },
+    }
     updateFood (req, res) => {
         let {id} = req.params;
         let {type} = req.body;
@@ -37,4 +37,3 @@ module.exports = {
 
     }
         
-}
