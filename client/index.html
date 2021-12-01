@@ -23,12 +23,8 @@
       <button name="color" type="submit" value="earth tones">earth tones</button>
       <button name="color" type="submit" value="pastels">pastels</button>
       </form>
-<script> 
-function getInputValue(){
-  const inputValue = document.getElementByID("fname", "lname").value;
+      
 
-  alert(inputValue);
-}
 </script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
@@ -38,15 +34,20 @@ function getInputValue(){
               const data = response.data;
               alert(data);
             });
+            
       document.getElementById("fortuneButton").onclick = function () {
-        axios.get("http:localhost:4000/api/fortune/")
+        axios.get("http://localhost:4000/api/fortune/")
         .then(function(response){
           const data = response.data;
           alert(data);
 
         })}
       };
-     
+      form.getInputValue().response
+   document.getElementByID("fname", "lname").value;
+   axios.get("http://localhost:4000/api/names_form/")
+  alert('Thank you!');
+
     </script>
     </body>
 </html>
